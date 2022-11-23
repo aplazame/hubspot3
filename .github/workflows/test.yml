@@ -6,17 +6,17 @@ jobs:
   prospector:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: jpetrucciani/prospector-check@master
   mypy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: jpetrucciani/mypy-check@master
   black:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: jpetrucciani/black-check@master
         with:
           path: 'hubspot3/'
